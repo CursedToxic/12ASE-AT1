@@ -28,3 +28,8 @@ For example, if a webpage only functioned as intended on Google Chrome, then tho
 The <canvas> tag creates a canvas within the HTML file that allows graphics to be drawn over it.
 
 **10. Justify why the World Wide Web wasn’t ‘designed’ to be ‘secure’ when it first emerged in the 1980s. (5 marks)**
+There are some reasons why the World Wide Web wasn’t designed to be secure when it first emerged. These are:
+1. The web was originally designed for a small and trusted community of users. This meant that security was not a major concern. The initial structure of the web was based on the assumption of trust.
+2. The creators of the web did not think that activities like shopping, banking or sensitive communications would be done on their platform so there were no initial security measures for such actions.
+3. Originally, the web was designed for quick and efficient data sharing, leading to development of protocols without security features e.g. HTTP. Security features were added later as vulnerabilities emerged.
+4. The web’s architecture was originally designed to be open, decentralised and flexible. Security mechanisms were complex, and potentially slowed down adoption while the internet was still growing, had they been implemented.
