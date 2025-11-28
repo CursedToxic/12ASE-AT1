@@ -11,9 +11,10 @@ document.getElementById('userSubmit').onclick = function(){
 
     if(username && email && birthdate && password && valid_password){
         document.getElementById("demo").innerText = 
-        `${username}
-        ${email}
-        ${birthdate}
-        ${password}`;
+        `Results:
+        Username:${username}
+        Email: ${email}
+        Birthdate: ${birthdate}
+        Password: ${password}`;
     }
 }

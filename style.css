@@ -11,7 +11,7 @@ section {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url('Dark_Theme.png') no-repeat;
+    background: url('images/darkBG.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -101,7 +101,7 @@ button {
     }
 }
 
-@media (max-height: 480px) {
+@media (max-height: 460px) {
     .login-box {
         width: 100dvw;
         border: none;
