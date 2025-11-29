@@ -6,7 +6,8 @@ Some web programming techniques to mitigate this include minifying images, optim
 
 **3. Explain two benefits of HTML and CSS in web development. Provide an example of how they work together to structure and style a webpage. (4 marks)**
 
-**4. Outline what JavaScript is and how it enhances the functionality of a webpage. Provide an example where JavaScript is used to validate user input on a web form. (2 marks)**
+**4. Outline what JavaScript is and how it enhances the functionality of a webpage. Provide an example where JavaScript is used to validate user input on a web form. (2 marks)**\
+JavaScript is a programming language that can perform actions based on input. It can enhance functionality of webpages by validating user input or adding responses to user actions. For example in a web form, the user input can be validated using JavaScript to check for certain conditions such as whether a password is longer than 8 characters. This forces users to enter passwords that are more difficult to crack, thus enhancing the overall legitimacy, ensuring the form functions properly.
 
 **5. Discuss the importance of optimising webpage load time for user experience. Provide three techniques to improve the loading speed of a website. (2 marks)**\
 Optimising webpage load times dramatically enhances user experience, as it enables the user to access the information that they need almost immediately. This ensures user satisfaction as the page loads and responds quickly.
