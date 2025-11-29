@@ -5,6 +5,11 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -16,78 +21,64 @@ section {
     background-position: center;
 }
 
-.login-box {
+.results-box {
     position: relative;
     width: 400px;
-    height: 460px;
+    padding: 40px 30px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;  
+    flex-direction: column;
+    align-items: center;
     backdrop-filter: blur(15px);
+    opacity: 0; /* for fade-in */
 }
 
-h2 {
+.results-box h2 {
     font-size: 2em;
     color: white;
     text-align: center;
+    margin-bottom: 25px;
 }
 
-.input-box {
-    position: relative;
-    width: 310px;
-    margin: 30px 0;
-    border-bottom: 2px solid white;
-
-}
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: white;
-    pointer-events: none;
-}
-
-.input-box input:defined~label{
-    top: -5px;  
-}
-
-.input-box input {
+.results-list {
     width: 100%;
-    height: 35px;
-    background: transparent;
-    border: none;
-    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.results-list p {
+    position: relative;
+    padding-left: 35px;
     font-size: 1em;
     color: white;
-    padding: 0 35px 0 5px;
+    /* border-bottom: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.input-box .icon {
+.results-list ion-icon {
     position: absolute;
-    right: 8px;
-    color: white;
+    left: 5px;
     font-size: 1.2em;
-    line-height: 1vh;
 }
 
-.input-box .toggle-password {
+.toggle-password {
     position: absolute;
-    transform: translateY(-70%);
-    left: 80px;
     cursor: pointer;
     color: white;
     font-size: 1.2em;
-    line-height: 1vh;
+    left: 120px;
+    transform: translateY(-10px)
 }
 
-button {
+.back-btn {
     width: 100%;
     height: 40px;
+    margin-top: 30px;
     background: white;
     border: none;
     outline: none;
@@ -98,33 +89,32 @@ button {
     font-weight: 500;
 }
 
-button:hover {
-    background: rgba(240,240,240);
+.back-btn:hover {
+    background: #e0e0e0;
 }
 
 @media (max-width: 400px) {
-    .login-box {
-        height: 100vh;
-        border: none;
+    .results-box {
+        width: 100dvw;
         border-radius: 0;
-        transition: 0.5s;
+        height: 100vh;
+        padding: 30px 20px;
     }
 
-    .input-box {
-        width: 75dvw;
+    .results-list p {
+        font-size: 0.95em;
     }
 }
 
-@media (max-height: 460px) {
-    .login-box {
+@media (max-height: 480px) {
+    .results-box {
         width: 100dvw;
-        border: none;
         border-radius: 0;
-        transition: 0.5s;
+        height: 100vh;
+        padding: 20px;
     }
-    
-    .input-box {
-        width: 75dvw;
-        transition: 0.5s;
+
+    .results-list p {
+        font-size: 0.95em;
     }
 }
