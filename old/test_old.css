@@ -1,0 +1,88 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    background-color: black;
+}
+
+.login-box {
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+input {
+    width: 320px;
+    height: 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding-left: 5px;
+    border: 2px solid #444;
+    transition: 0.25s ease;
+    outline: none;
+    background: #222;
+    color: white;
+}
+
+button {
+    font-size: 1.1em;
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    border: none;
+}
+
+/* Glow effects */
+#userInput:focus {
+    box-shadow: 0 0 10px 3px rgba(0, 200, 255, 0.8);
+    border-color: rgba(0, 200, 255, 0.8);
+}
+
+#userEmail:focus {
+    box-shadow: 0 0 10px 3px rgba(0, 255, 120, 0.8);
+    border-color: rgba(0, 255, 120, 0.8);
+}
+
+#userDOB:focus {
+    box-shadow: 0 0 10px 3px rgba(255, 200, 0, 0.8);
+    border-color: rgba(255, 200, 0, 0.8);
+}
+
+#userPassword:focus {
+    box-shadow: 0 0 10px 3px rgba(255, 80, 80, 0.8);
+    border-color: rgba(255, 80, 80, 0.8);
+}
+
+button:focus,
+button:hover {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+}
