@@ -13,3 +13,9 @@ def valid_user():
         print("Valid user as far as I'm concerned.")
 
 valid_user()
+
+### TEST CASES ###
+# test
+# 123
+# username123
+# <test123>
