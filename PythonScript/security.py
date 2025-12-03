@@ -15,7 +15,7 @@ def valid_user():
 valid_user()
 
 ### TEST CASES ###
-# test
-# 123
 # username123
 # <test123>
+# !test
+# test123
