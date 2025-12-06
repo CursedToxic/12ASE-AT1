@@ -20,7 +20,7 @@ document.getElementById("userSubmit").addEventListener("click", function (event)
     let valid = true;
 
     // Username
-    if (username.length === 0) {
+    if (username.length == 0) {
         userErr.textContent = "Username cannot be empty.";
         valid = false;
     }
@@ -61,7 +61,7 @@ document.getElementById("userSubmit").addEventListener("click", function (event)
     }
 });
 
-// 🔥 Remove error messages when user types
+// Remove error messages when user types
 ["userInput", "emailInput", "birthInput", "pinInput"].forEach(id => {
     document.getElementById(id).addEventListener("input", function () {
         const err = document.getElementById(id.replace("Input", "Error"));
