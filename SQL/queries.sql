@@ -1,4 +1,4 @@
--- Create Table --
+-- Activity 1: Create Table --
 CREATE TABLE IF NOT EXISTS RestaurantReservations(
     ReservationID INTEGER PRIMARY KEY AUTOINCREMENT,
     UserName TEXT NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS RestaurantReservations(
     CONSTRAINT email_format CHECK (UserEmail LIKE '%@%.%')
 );
 
--- Activity 1: Enter Values into Table --
+-- Enter Values into Table --
 INSERT INTO RestaurantReservations(UserName, UserEmail, ReservationDate, Time, NumberOfGuests) VALUES
 ('Alice', 'alice@example.com', '2024-09-20', '19:00', 4),
 ('Bob', 'bob@example.com', '2024-09-27', '20:30', 2),
@@ -27,8 +27,5 @@ SELECT SUM(NumberOfGuests) AS TotalGuests
 FROM RestaurantReservations
 WHERE ReservationDate BETWEEN '2024-09-13' AND '2024-09-25';
 
--- Activity 4: Delete Table -- 
+-- Delete Table: If Needed -- 
 DROP TABLE RestaurantReservations;
-
--- Activity 5: Each Query is Optimised and Free from Potential SQL Injection --
--- This is because they are hardcoded into the query in Activity 1 -- 
