@@ -60,8 +60,10 @@
      
 9. **Explain the use of the \<canvas\> tag in HTML design? Give an example. (2 marks)**  
    The \<canvas\> tag creates a canvas within the HTML file that allows graphics to be drawn over it.  
+   These graphics are drawn using javascript code.
    For example, in a web simulation program, the canvas element because the values are not predetermined.   
-   This enables the user to enter values, without the \<canvas\> tag, there would be no simulators.  
+   This enables the user to enter values, without the \<canvas\> tag, there would be no simulators. 
+   In summary, the canvas tag acts like a physical canvas, enabling the site to ‘paint’ graphics on the blank template. 
      
 10. **Justify why the World Wide Web wasn’t ‘designed’ to be ‘secure’ when it first emerged in the 1980s. (5 marks)**  
     There are some reasons why the World Wide Web (WWW) wasn’t designed to be secure when it first emerged. These are:  
